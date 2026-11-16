@@ -70,7 +70,7 @@ export default function App() {
     >
       <main className="w-full max-w-5xl bg-white/80 rounded-2xl shadow-xl p-6 md:p-10">
 
-        {/* Header */}
+        
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-gray-800">
             FocusFlow
@@ -80,7 +80,7 @@ export default function App() {
           </p>
         </header>
 
-        {/* Dashboard */}
+
         <section className="stats stats-vertical sm:stats-horizontal shadow bg-white w-full mb-8">
           <div className="stat">
             <div className="stat-title">Total Tasks</div>
@@ -102,7 +102,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* Search */}
+    
         <section className="mb-6">
           <InputField
             value={search}
@@ -112,7 +112,7 @@ export default function App() {
           />
         </section>
 
-        {/* Tasks heading and filters */}
+
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
           <h2 className="text-2xl font-semibold text-gray-800">
             My Tasks
@@ -154,7 +154,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Task list */}
         <div className="mb-6">
           <TaskList
             tasks={filteredTasks}
@@ -163,7 +162,7 @@ export default function App() {
           />
         </div>
 
-        {/* Add task */}
+
         <div className="fixed bottom-6 right-10 z-50">
           <AddTaskModal onAddTask={addTask} />
         </div>
